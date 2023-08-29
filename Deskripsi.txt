@@ -1,0 +1,7 @@
+Dengan penuh semangat, saya ingin berbagi tentang proyek terbaru yang telah saya rancang dan kembangkan: "Movie Hann." Website ini dibangun dengan fokus untuk memberikan pengalaman yang memudahkan pencarian informasi tentang film-film terbaru.
+
+Melalui penggunaan teknologi React JS dan pendekatan manajemen state dengan Redux, saya berhasil menciptakan platform yang interaktif dan responsif. Meskipun Movie Hann tidak memiliki kemampuan untuk menonton film langsung, tetapi tujuan utama kami adalah menyediakan wadah yang sangat efisien bagi para pengguna yang ingin mengetahui lebih banyak tentang film-film yang mereka minati.
+
+Website ini mengintegrasikan API gratis yang disediakan oleh https://developer.themoviedb.org/docs, sehingga kami dapat memberikan akses ke informasi film terbaru, ulasan, peringkat, dan banyak lagi. Dengan tampilan yang ramah pengguna, Movie Hann memungkinkan pengguna untuk menjelajahi dunia film dengan mudah dan nyaman.
+
+Saya merasa bangga dengan hasil kerja keras kami dan dedikasi untuk menciptakan sebuah platform yang bermanfaat bagi komunitas pecinta film. Jika Anda ingin mengetahui lebih lanjut tentang proses pengembangan proyek ini atau memiliki pertanyaan lainnya, jangan ragu untuk menghubungi saya. Terima kasih telah meluangkan waktu untuk menjelajahi Movie Hann, dan saya berharap platform ini dapat memberikan manfaat kepada Anda!
