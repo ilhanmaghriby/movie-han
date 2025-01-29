@@ -22,10 +22,7 @@ const SearchFilm = () => {
       },
     };
 
-    fetch(
-      `${baseUrl}/search/movie?query=${Search}&language=en-US`,
-      options
-    )
+    fetch(`${baseUrl}/search/movie?query=${Search}&language=en-US`, options)
       .then((response) => response.json())
       .then((response) => {
         SetResultFilm(response.results);
@@ -34,7 +31,7 @@ const SearchFilm = () => {
   }, [Search]);
 
   return (
-    <div className="container pt-24 mb-20">
+    <div className=" pt-24 mb-20">
       <div className="flex flex-col items-center">
         <input
           type="text"
@@ -58,31 +55,18 @@ const SearchFilm = () => {
                 key={result.id}
               >
                 <figure>
-                  <img
-                    src={`${baseImg}${result.poster_path}`}
-                    alt="Shoes"
-                  />
+                  <img src={`${baseImg}${result.poster_path}`} alt="Shoes" />
                 </figure>
                 <div className="card-body">
-                  <h2 className="card-title">
-                    {result.title}
-                  </h2>
+                  <h2 className="card-title">{result.title}</h2>
                   <p>{result.overview}</p>
                   <div className=" my-2 flex">
-                    <img
-                      src={star}
-                      alt=""
-                      className="w-5 mr-1"
-                    />
-                    <p className="font-semibold">
-                      {result.vote_average}
-                    </p>
+                    <img src={star} alt="" className="w-5 mr-1" />
+                    <p className="font-semibold">{result.vote_average}</p>
                   </div>
                   <div className="card-actions justify-end my-2">
                     <Link to={`/filmdetail/${result.id}`}>
-                      <button className="btn btn-neutral">
-                        Details
-                      </button>
+                      <button className="btn btn-neutral">Details</button>
                     </Link>
                   </div>
                 </div>

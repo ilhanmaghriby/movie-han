@@ -30,7 +30,7 @@ const Upcoming = () => {
   }, []);
 
   return (
-    <div className="container pt-24 flex justify-center mb-20">
+    <div className=" pt-24 flex justify-center mb-20">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
         {Upcoming.map((result) => {
           return (
@@ -39,20 +39,13 @@ const Upcoming = () => {
               key={result.id}
             >
               <figure>
-                <img
-                  src={`${baseImg}${result.poster_path}`}
-                  alt="Shoes"
-                />
+                <img src={`${baseImg}${result.poster_path}`} alt="Shoes" />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">
-                  {result.title}
-                </h2>
+                <h2 className="card-title">{result.title}</h2>
                 <p>{result.overview}</p>
                 <div className="card-actions justify-end my-2">
-                  <button className="btn btn-neutral">
-                    Soon
-                  </button>
+                  <button className="btn btn-neutral">Soon</button>
                 </div>
               </div>
             </div>

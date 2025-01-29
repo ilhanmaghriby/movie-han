@@ -33,13 +33,10 @@ const FilmDetails = () => {
   }, []);
 
   return (
-    <div className="container pt-24 lg:pt-12 flex justify-center mb-20">
+    <div className=" pt-24 lg:pt-12 flex justify-center mb-20">
       {Details !== null ? (
         <div className="hero min-h-screen ">
-          <div
-            className="hero-content flex-col lg:flex-row"
-            key={Details.id}
-          >
+          <div className="hero-content flex-col lg:flex-row" key={Details.id}>
             <img
               src={`${baseImg}${Details.poster_path}`}
               className="max-w-xs md:max-w-sm rounded-lg shadow-2xl"
@@ -55,25 +52,15 @@ const FilmDetails = () => {
               <div className="flex">
                 {Details.length !== 0 &&
                   Details.genres.map((item) => {
-                    return (
-                      <p key={item.id}>
-                        {item.name},&nbsp;
-                      </p>
-                    );
+                    return <p key={item.id}>{item.name},&nbsp;</p>;
                   })}
               </div>
               <h5 className="font-semibold">Release on</h5>
               <p>{Details.release_date}</p>
               <h5 className="font-semibold">Rating</h5>
               <div className="flex">
-                <img
-                  src={star}
-                  alt=""
-                  className="w-5 mr-1"
-                />
-                <p className="font-semibold">
-                  {Details.vote_average}
-                </p>
+                <img src={star} alt="" className="w-5 mr-1" />
+                <p className="font-semibold">{Details.vote_average}</p>
               </div>
               <br />
               <h4 className="font-semibold md:text-xl ">
@@ -82,23 +69,18 @@ const FilmDetails = () => {
               <br />
               <div className="grid grid-cols-2 md:grid-cols-3">
                 {Details.length !== 0 &&
-                  Details.production_companies.map(
-                    (item) => {
-                      return (
-                        <img
-                          key={item.id}
-                          src={`https://image.tmdb.org/t/p/w500/${item.logo_path}`}
-                          alt={item.name}
-                          className="h-full w-40"
-                        />
-                      );
-                    }
-                  )}
+                  Details.production_companies.map((item) => {
+                    return (
+                      <img
+                        key={item.id}
+                        src={`https://image.tmdb.org/t/p/w500/${item.logo_path}`}
+                        alt={item.name}
+                        className="h-full w-40"
+                      />
+                    );
+                  })}
               </div>
-              <button
-                className="btn btn-neutral mt-10"
-                onClick={goBack}
-              >
+              <button className="btn btn-neutral mt-10" onClick={goBack}>
                 Back
               </button>
             </div>
